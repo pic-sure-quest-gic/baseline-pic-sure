@@ -1,7 +1,5 @@
 use auth;
 INSERT INTO application VALUES (0x__APPLICATION_UUID__,'PIC-SURE multiple data access API',0x01,'PICSURE','','/picsureui');
-alter table `privilege` ADD COLUMN (queryScope VARCHAR(8192));
-alter table `privilege` ADD COLUMN (queryTemplate VARCHAR(8192));
 INSERT INTO `privilege` VALUES 
 (0x7044061AF65B425F86CE73A1BF7F4402,'PIC-SURE Auth super admin for managing roles/privileges/application/connections','SUPER_ADMIN',NULL,'[]',NULL),
 (0xAD08212E096F414CBA8D1BAE09415DAB,'PIC-SURE Auth admin for managing users.','ADMIN',NULL,'[]',NULL);
